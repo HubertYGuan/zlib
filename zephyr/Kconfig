@@ -1,0 +1,4 @@
+config ZLIB
+	bool "Enable zlib"
+	help
+	  This option enables zlib as a Zephyr module.
