@@ -146,7 +146,7 @@
 
 /* default memLevel */
 #if MAX_MEM_LEVEL >= 8
-#  define DEF_MEM_LEVEL 8
+#  define DEF_MEM_LEVEL 3
 #else
 #  define DEF_MEM_LEVEL  MAX_MEM_LEVEL
 #endif

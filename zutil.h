@@ -74,7 +74,7 @@ extern z_const char * const z_errmsg[10]; /* indexed by 2-zlib_error */
 /* default windowBits for decompression. MAX_WBITS is for compression only */
 
 #if MAX_MEM_LEVEL >= 8
-#  define DEF_MEM_LEVEL 8
+#  define DEF_MEM_LEVEL 3
 #else
 #  define DEF_MEM_LEVEL  MAX_MEM_LEVEL
 #endif
