@@ -1,4 +1,6 @@
 config ZLIB
 	bool "Enable zlib"
+	default n
+	depends on POSIX_API
 	help
 	  This option enables zlib as a Zephyr module.
