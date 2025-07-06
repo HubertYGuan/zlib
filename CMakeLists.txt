@@ -147,6 +147,8 @@ zephyr_library_compile_options_ifdef(ZLIB_BUILD $<$<BOOL:${HAVE___ATTR__VIS_HIDD
 
 zephyr_library_compile_options_ifdef(ZLIB_BUILD $<$<BOOL:${HAVE_OFF64_T}>:_LARGEFILE64_SOURCE=1>)
 
+zephyr_library_compile_options(-U_POSIX_C_SOURCE -D_POSIX_C_SOURCE=200809L)
+
 zephyr_library_link_libraries(ZLIB)
 target_link_libraries(ZLIB INTERFACE zephyr_interface)
 
